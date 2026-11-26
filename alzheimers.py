@@ -424,5 +424,5 @@ try:
 except TypeError:  # older Streamlit: fall back to the sidebar menu
     nav = st.navigation([HOME, PREDICT, INSIGHTS, ABOUT])
 
-st.markdown("**🧠 Alzheimer’s ML Project**")
+st.markdown("**🧠 Alzheimer’s Disease Prediction Using Machine Learning**")
 nav.run()
