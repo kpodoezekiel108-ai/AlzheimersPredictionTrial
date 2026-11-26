@@ -136,7 +136,7 @@ def coefficient_table(model) -> pd.DataFrame:
 # ===========================================================================
 # 3. SHARED PIECES
 # ===========================================================================
-NOTICE = ("**Experimental machine-learning project. Not a diagnostic tool.** Its output must not "
+NOTICE = ("**This is an experimental machine-learning project, not a diagnostic tool.** Its output must not "
           "replace professional medical assessment. If you are worried about memory or brain "
           "health, please speak with a doctor.")
 
@@ -164,7 +164,7 @@ def load_or_stop():
 def home_page():
     st.markdown(
         '<div class="hero"><h1>Understanding Alzheimer’s Disease Through Data and Machine Learning</h1>'
-        "<p>An educational project that shows how a machine-learning model uses everyday health, "
+        "<p>This is an educational project that shows how a machine-learning model uses everyday health, "
         "lifestyle and background information to produce an experimental estimate. "
         "Explore how it works, what it can do, and where it falls short.</p></div>",
         unsafe_allow_html=True,
@@ -264,7 +264,7 @@ def show_result(model):
     predicted = int(p1 >= 0.5)
     label, level = risk_category(p1)
 
-    st.title("Prediction result")
+    st.title("Prediction Result")
 
     st.subheader("A. Prediction summary")
     getattr(st, level)(f"**{label} estimated risk** according to this demo model "
